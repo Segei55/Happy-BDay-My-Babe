@@ -1,0 +1,233 @@
+:root {
+    --red: #E08E90;
+    --light_pink: #FFF7F4;
+    --dark_pink: #FCEEEF;
+    --dark_brown: #3E2F2D;
+    --light_brown: #6E5B59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url("images/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    padding: 20px;
+}
+
+.hero__text, .letter__text, .video-greeting__text, .final__text {
+    text-align: center;
+}
+
+.hero__title-upper {
+    padding-top: 193.5px;
+    font-size: 14px;
+    line-height: normal;
+    color: var(--red);
+    font-family: "Manrope", sans-serif;
+}
+
+.hero__title {
+    padding-top: 51px;
+    font-size: 100px;
+    line-height: 90%;
+    color: var(--dark_brown);
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.hero__title-lower {
+    padding-top: 12px;
+    font-size: 44px;
+    line-height: normal;
+    color: var(--red);
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.hero__description {
+    padding-top: 32px;
+    padding-bottom: 281.5px;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--dark_brown);
+    font-family: "Manrope", sans-serif;
+}
+
+.letter, .video-greeting {
+    background-color: var(--light_pink);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 733px;
+    padding: 20px;
+}
+
+.letter__content, .video-greeting__content {
+    background-color: white;
+    min-width: 800px;
+    min-height: 493px;
+    border-radius: 20px;
+}
+
+.letter__heart-photo, .final__crown-photo {
+    padding-top: 52px;
+    padding-inline: 50%;
+}
+
+.letter__title, .video-greeting__title {
+    padding-top: 40px;
+    font-family: "Cormorant Garamond", sans-serif;
+    color: var(--dark_brown);
+}
+
+.letter__text__part1, .letter__text__part2 {
+    padding-top: 24px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+    font-size: 16px;
+    font-weight: 160%;
+}
+
+.letter__text__ending1 {
+    padding-top: 40px;
+    font-family: "Cormorant Garamond", sans-serif;
+    color: var(--red);
+    font-size: 24px;
+    font-weight: auto;
+}
+
+.letter__text__ending2 {
+    padding-top: 6px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+    font-size: 12px;
+    font-weight: auto;
+}
+
+.video-greeting__description{
+    padding-top: 16px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+    font-size: 16px;
+    font-weight: 150%;
+}
+
+.video-greeting__video {
+    padding-top: 40px;
+    min-width: 800px;
+}
+
+.video-greeting__ending{
+    padding-top: 56px;
+    font-family: "Manrope", sans-serif;
+    color: #A38F8D;
+    font-size: 14px;
+    font-weight: 150%;
+}
+
+.wishes {
+    background-color: var(--light_pink);
+    background-size: cover;
+    min-height: 934px;
+    padding: 20px;
+}
+
+.wishes__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishes__title {
+    font-size: 48px;
+    font-family: "Cormorant Garamond", sans-serif;
+    color: var(--dark_brown);
+}
+
+.wishes__description {
+    padding-top: 16px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+}
+
+.wishes__cards {
+    padding-block: 80px;
+    display: grid;
+    justify-content: left;
+    align-items: baseline;
+    grid-template-columns: repeat(auto-fit, minmax(410.67px, 1fr));
+    gap: 24px 28px;
+    width: 100%;
+    max-width: 1fr;
+    margin: auto;
+}
+
+.wishes__wish-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--light_pink);
+    border: 1px solid var(--dark_pink);
+    border-radius: 16px;
+    padding: 14px 8px;
+}
+
+.wishes__wish-card__number {
+    font-size: 18px;
+    color: var(--red);
+    font-family: "Cormorant Garamond", sans-serif;
+    padding: 4px 10px;
+}
+
+.wishes__wish-card__text {
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+    line-height: 140%;
+}
+
+.final {
+    background-color: var(--dark_pink);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 573px;
+    padding: 20px;
+}
+
+.final__title {
+    padding-top: 24px;
+    font-size: 56px;
+    font-family: "Cormorant Garamond", sans-serif;
+    color: var(--dark_brown);
+    line-height: 110%;
+}
+
+.final_description {
+    padding-top: 24px;
+    font-family: "Manrope", sans-serif;
+    color: var(--dark_brown);
+    line-height: 180%;
+}
+
+.final__text-end {
+    margin-top: 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--red);
+    font-family: "Manrope", sans-serif;
+    color: var(--red);
+    line-height: 180%;
+}
