@@ -6,10 +6,22 @@
     --light_brown: #6E5B59;
 }
 
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 .hero {
@@ -21,8 +33,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 800px;
     padding: 20px;
+    min-height: 800px;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .hero__text, .letter__text, .video-greeting__text, .final__text {
@@ -69,20 +83,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 733px;
     padding: 20px;
 }
 
 .letter__content, .video-greeting__content {
     background-color: white;
-    min-width: 800px;
+    width: 100%;
+    max-width: 800px;
     min-height: 493px;
     border-radius: 20px;
 }
 
 .letter__heart-photo, .final__crown-photo {
     padding-top: 52px;
-    padding-inline: 50%;
+    padding-left: 50%;
+    text-align: center;
 }
 
 .letter__title, .video-greeting__title {
@@ -93,6 +108,7 @@
 
 .letter__text__part1, .letter__text__part2 {
     padding-top: 24px;
+    padding-inline: 48px;
     font-family: "Manrope", sans-serif;
     color: var(--dark_brown);
     font-size: 16px;
@@ -125,7 +141,10 @@
 
 .video-greeting__video {
     padding-top: 40px;
-    min-width: 800px;
+    padding-inline: 48px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 
 .video-greeting__ending{
@@ -139,7 +158,7 @@
 .wishes {
     background-color: var(--light_pink);
     background-size: cover;
-    min-height: 934px;
+    min-height: auto;
     padding: 20px;
 }
 
@@ -165,12 +184,11 @@
 .wishes__cards {
     padding-block: 80px;
     display: grid;
-    justify-content: left;
+    justify-content: center;
     align-items: baseline;
-    grid-template-columns: repeat(auto-fit, minmax(410.67px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Уменьшили с 410.67px */
     gap: 24px 28px;
     width: 100%;
-    max-width: 1fr;
     margin: auto;
 }
 
